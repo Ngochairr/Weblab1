@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+      <title>Hai's Great Ape Site: Map</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="assets/styles.css" />
+      <link rel="icon" type="image/x-icon" href="assets/favicon.jpg" />
+      <script>
+        document.querySelector('.ChimpButton').onclick = () => {
+          window.location.href = 'ape_info.html#chimpanzee';
+        };
+        document.querySelector('.BonoboButton').onclick = () => {
+          window.location.href = 'ape_info.html#bonobo';
+        };
+        document.querySelector('.OrangutanButton').onclick = () => {
+          window.location.href = 'ape_info.html#orangutan';
+        };
+        document.querySelector('.GorillaButton').onclick = () => {
+          window.location.href = 'ape_info.html#gorilla';
+        };
+      </script>
+    </head>
+    <body style="background-image: url('assets/nasa-blue-marble-1.jpg');  background-size: cover;">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="preservation.html">Preservation</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+
+      <div>
+        <img class="Chimp" src="assets/chimpanzee_map.jpg" alt="Chimp" />
+        <img class="Bonobo" src="assets/bonobo_map.jpg" alt="Bonobo" />
+        <img class="Orangutan" src="assets/orangutan_map.JPG" alt="Orangutan" />
+        <img class="Gorilla" src="assets/gorilla_map.jpg" alt="Gorilla" />
+      </div>
+
+      <div>
+        <button class="BonoboButton" type="button">Bonobo</button>
+        <button class="ChimpButton" type="button">Chimpanzee</button>
+        <button class="OrangutanButton" type="button">Orangutan</button>
+        <button class="GorillaButton" type="button">Gorilla</button>
+      </div>
+
+      <script>
+        document.querySelector('.ChimpButton').onclick = () => {
+          window.location.href = 'about.html#chimpanzee';
+        };
+        document.querySelector('.BonoboButton').onclick = () => {
+          window.location.href = 'about.html#bonobo';
+        };
+        document.querySelector('.OrangutanButton').onclick = () => {
+          window.location.href = 'about.html#orangutan';
+        };
+        document.querySelector('.GorillaButton').onclick = () => {
+          window.location.href = 'about.html#gorilla';
+        };
+      </script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hai's Great Ape Site: Survey</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.jpg">
+
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="preservation.html">Preservation</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+  <h1>🦧 Website Feedback Survey 🦍</h1>
+  <p>Please take a moment to share your thoughts about <strong>The Great Apes</strong> website.</p>
+
+  <form id="survey-form" novalidate>
+    <!-- User Information -->
+    <fieldset>
+      <legend>Your Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required pattern="[A-Za-z\s]{3,}" 
+             title="Please enter your full name (letters only, at least 3 characters).">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="^\d{10}$" 
+             title="Enter a 10-digit phone number (numbers only)" required placeholder="1234567890">
+
+      <label for="password">Create a Password:</label>
+      <input type="password" id="password" name="password" 
+             required pattern="(?=.*\d)(?=.*[A-Z]).{6,}" 
+             title="At least 6 characters, with one uppercase letter and one number.">
+
+      <label for="age">Your Age:</label>
+      <input type="number" id="age" name="age" min="5" max="120" step="1" required>
+
+      <label for="visit-date">Date of Visit:</label>
+      <input type="date" id="visit-date" name="visit-date" required>
+    </fieldset>
+
+    <!-- Site Opinion -->
+    <fieldset>
+      <legend>Your Opinion on the Site</legend>
+
+      <label for="satisfaction">Overall Satisfaction (1–10):</label>
+      <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" step="1" value="5">
+
+      <label for="fav-color">Favorite Color on the Site:</label>
+      <input type="color" id="fav-color" name="fav-color" value="#4CAF50">
+
+      <label for="content-rating">Content Rating:</label>
+      <select id="content-rating" name="content-rating" required>
+        <optgroup label="Positive">
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+        </optgroup>
+        <optgroup label="Negative">
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </optgroup>
+      </select>
+
+      <label>Which sections did you enjoy the most?</label>
+      <label><input type="checkbox" name="favorite" value="chimpanzees">Chimpanzees</label>
+      <label><input type="checkbox" name="favorite" value="bonobos">Bonobos</label>
+      <label><input type="checkbox" name="favorite" value="gorillas">Gorillas</label>
+      <label><input type="checkbox" name="favorite" value="orangutans">Orangutans</label>
+      <hr>
+      <label>Would you recommend this site to others?</label>
+      <label><input type="radio" name="recommend" value="yes" required>Yes</label>
+      <label><input type="radio" name="recommend" value="no">No</label>
+
+      <label for="feedback">Additional Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Share your thoughts here..."></textarea>
+    </fieldset>
+
+    <!-- Upload and Hidden Fields -->
+    <fieldset>
+      <legend>Uploads & Hidden Info</legend>
+
+      <label for="screenshot">Upload a Screenshot (optional):</label>
+      <input type="file" id="screenshot" name="screenshot" accept="image/*">
+
+      <input type="hidden" name="site-version" value="1.0">
+    </fieldset>
+
+    <div class="buttons">
+      <input type="submit" value="Submit Survey">
+      <input type="reset" value="Reset Form">
+    </div>
+  </form>
+
+  <script>
+    const form = document.getElementById("survey-form");
+
+    form.addEventListener("submit", (e) => {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        alert("️ Please correct the highlighted fields and try again.");
+      } else {
+        e.preventDefault();
+        alert(" Thank you for your feedback! Your responses have been recorded.");
+        form.reset();
+      }
+    });
+  </script>
+</body>
+</html>
