@@ -1,0 +1,138 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Oct 23, 2025, 10:41:11 PM
+    Author     : admin
+*/
+body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #222;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color:whitesmoke ;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2e3a59;
+    }
+
+    form {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      padding: 15px 20px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #333;
+      padding: 0 5px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 8px;
+    }
+
+    input:invalid {
+      border-color: #e57373;
+    }
+
+    input:valid {
+      border-color: #81c784;
+    }
+
+    .buttons {
+      text-align: center;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      background: #2e3a59;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background: #44527a;
+    }
+
+    small {
+      color: #666;
+      font-size: 0.9em;
+    }
+.Bonobo {
+  position: absolute;
+  bottom: 300px;
+  right: 650px;
+  width: 50px; 
+}
+.BonoboButton {
+  position: absolute;
+  bottom: 275px;
+  right: 650px;
+}
+.Chimp {
+  position: absolute;
+  bottom: 350px;
+  right: 700px;
+  width: 50px; 
+}
+.ChimpButton {
+  position: absolute;
+  bottom: 325px;
+  right: 700px;
+}
+.Gorilla {
+  position: absolute;
+  bottom: 300px;
+  right: 550px;
+  width: 50px; 
+}
+.GorillaButton {
+  position: absolute;
+  bottom: 275px;
+  right: 550px;
+}
+.Orangutan {
+  position: absolute;
+  bottom: 250px;
+  right: 300px;
+  width: 50px; 
+}
+.OrangutanButton {
+  position: absolute;
+  bottom: 225px;
+  right: 300px;
+}
